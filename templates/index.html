@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <style>
+          .unix-command {
+            font-family: monospace;
+            background-color: #000;
+            color: #00ff00;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 0;
+          }
+          body {
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            line-height: 1.42857143;
+            font-size: 14px;
+            background-color: #000;
+            color: #a4a4c3;
+          }
+          canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Behind other elements */
+            pointer-events: none;
+          }
+    
+          .about-me {
+            background-color: #0e0e12;
+            padding: 20px;
+            position: relative; /* Ensure child elements respect z-index */
+            z-index: 1; /* Above the canvas */
+          }
+          
+          b {
+            color: #00ff00;
+            font-weight: bold;
+            font-size: 15px;
+          }
+          .no-style-a{
+            text-decoration: none;
+            color: inherit;
+          }
+        </style>
+            <div class="about-me container text-left">
+                <h2 class="clickable unix-command">&gt;whoami</h2>
+                <div class="border border-primary p-3" id="hiddenDiv" style="display: none;">
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"> : ) </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">about me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.github.com/metflekx">github</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="projects">my projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mailto:dogfuelx@gmail.com">mail</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <h3 class="p-2 text-center">]-[3llo There!</h3>
+                <p>this is <b>Metflex</b> writing. W3lcome! and stay tuned!</p>
+                <p>while living in <b>Istanbul</b>, Over the past several years I've spent most of my time studying Cs. and Mathematics on my own.
+                by looking at the unpolished look on this page, one can easily deduce that I'm no front-end artist!
+                Here are some of the things I'm good at: (my nieche so to speak)</p>
+                <ul class="container">
+                    <li>
+                        I do <b>System Programming, thinkering Linux programming interface and linux drivers, 
+                        <a class="no-style-a" href="https://en.wikipedia.org/wiki/reverse_engineering">reverse engineering, </a>
+                        <a class="no-style-a" href="https://rb.gy/p1ldwi">system security and </a>
+                        <a class="no-style-a" href="https://rb.gy/mtw8ft">software exploitation </a>
+                        </b> using
+                        <b><a class="no-style-a" href="https://en.wikipedia.org/wiki/c_(programming_language)">C</a> and
+                          <a class="no-style-a" href="https://en.wikipedia.org/wiki/X86_assembly_language">X86 assembly </a>
+                          along with <a class="no-style-a" href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a></b>.
+                    </li>
+                    <li>
+                        I use <b>
+                        <a class="no-style-a" href="https://en.wikipedia.org/wiki/Python_(programming_language)"> Python </a> for machine learning</b>.
+                    </li>
+                </ul>
+                <p>other than geeking out on low-level programming, 
+                I also do CTF's and bug bounty hunting in the field of web security as i'm familiar with web technologies and web security concepts.
+                and aside from system programming, I also do application programming more precisely making games and 3-d visualizations using openGL with
+                Rust &lt;3 and... well, C.</p>
+                <p>With that said, let's not bore you with the details. 
+                if you are interested in my work, you can check out my <a href="https://www.github.com/metflekx">github</a> page.
+                or check the <a href="projects">projects</a> page to see some of my work.</p>
+                <p>If you are interested in working with me or just want to say hi, you can reach me at <a href="mailto:codermehdi@proton.me">my mail</a>.</p>
+                <div class="text-center">
+                    <sub>M.Habibi 8 Feb 2024 - thank you for reading!</sub>
+                </div>
+                </div>
+            </div>
+            <canvas style="z-index=-1;"></canvas>
+            <script>
+                let canvas = document.querySelector("canvas");
+                
+                let ctx = canvas.getContext("2d");
+                let width = canvas.width = window.innerWidth;
+                let height = canvas.height = window.innerHeight;
+                let str = "Hello World!";
+                let matrix = str.split("");
+                let font = 12;
+                let col = width / font;
+                let arr = [];
+                
+                for(let i = 0; i < col; i++) {
+                    arr[i] = 1;
+                }
+                
+                const draw = () => {
+                    ctx.fillStyle = "rgba(0,0,0,0.05)";
+                    ctx.fillRect(0, 0, width, height);
+                    ctx.fillStyle = "#00FF00";
+                    ctx.font = `${font}px system-ui`;
+                
+                    for(let i = 0; i < arr.length; i++) {
+                        let txt = matrix[Math.floor(Math.random() * matrix.length)];
+                        ctx.fillText(txt, i * font, arr[i] * font);
+                
+                        if(arr[i] * font > height && Math.random() > 0.975) {
+                            arr[i] = 0;
+                        }
+                        arr[i]++;
+                    }
+                }
+                
+                setInterval(draw, 20);
+                
+                window.addEventListener("resize", () => location.reload());
+            </script>
+    
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const heading = document.querySelector('.clickable');
+                const hiddenDiv = document.getElementById('hiddenDiv');
+              
+                heading.addEventListener('click', function() {
+                  if (hiddenDiv.style.display === 'none') {
+                    hiddenDiv.style.display = 'block';
+                    heading.style.display = 'none';
+                  }
+                });
+              
+                // listen for enter key
+                document.addEventListener('keydown', function(event) {
+                  if (event.key === 'Enter') {
+                    if (hiddenDiv.style.display === 'none') {
+                      hiddenDiv.style.display = 'block';
+                      heading.style.display = 'none';
+                  }}
+                });
+    
+                document.addEventListener('touchstart', function(event) {
+                  if (hiddenDiv.style.display === 'none') {
+                    hiddenDiv.style.display = 'block';
+                    heading.style.display = 'none';
+                  }
+                });
+              
+              });
+            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>
