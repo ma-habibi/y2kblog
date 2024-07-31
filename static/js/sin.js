@@ -20,7 +20,7 @@ function randShift() {
 let sins = [
   {
     "f": 0.001,
-    "C": randAmp(),
+    "C": randAmp()/2,
     "theta": randShift(),
   },
   {
@@ -44,13 +44,13 @@ const MAX_FREQ = 0.05
 function updateFrequencies() {
   //
   // keep normalize
-  for (let i = 0; i < sins.length - 1; i++) {
+  for (let i = 0; i < sins.length; i++) {
     if (sins[i].f > MAX_FREQ)
       inc = false;
     if (sins[i].f < MIN_FREQ)
       inc = true;
     // change
-    sins[i].f += inc? (0.0001): (-0.0001);
+    sins[i].f += inc? (0.00001): (-0.00001);
   }
 }
 
