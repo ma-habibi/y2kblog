@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', animation="sin")
+    return render_template('index.html', animation="matrix")
 
 @app.route("/projects")
 def projects():
     animation = "sin"
-    return render_template('projects.html', animation="matrix")
+    return render_template('projects.html', animation="spiral")
 
 @app.route("/snake")
 def snake():
@@ -26,4 +26,4 @@ def spiral():
     return render_template("spiral.html", animation="spiral")
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=8080)

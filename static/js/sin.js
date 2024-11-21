@@ -45,7 +45,7 @@ function updateFrequencies() {
   //
   // keep normalize
   for (let i = 0; i < sins.length; i++) {
-    if (sins[i].f > MAX_FREQ)
+    if (sins[i].f >= MAX_FREQ)
       inc = false;
     if (sins[i].f < MIN_FREQ)
       inc = true;
