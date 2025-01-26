@@ -11,7 +11,7 @@ def index():
 @app.route("/projects")
 def projects():
     animation = "sin"
-    return render_template('projects.html', animation="spiral")
+    return render_template('projects.html', animation="matrix")
 
 @app.route("/snake")
 def snake():
