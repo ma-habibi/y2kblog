@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Mahdi's Y2K Tech Blog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="banner">
+  <h1>Mahdi's Y2K Tech Blog</h1>
+</div>
+<div id="container">
+  <div id="sidebar">
+    <h2>Contact</h2>
+    <p>em.habibi@hotmail.com</p>
+    <h2>Links</h2>
+    <ul id="navlist">
+      <li><a href="./index.html">Home</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <h1>Version Control</h1>
+
+    <h2>Git Commits Messages</h2>
+    <p>Any git commit message will follow the convention:</p>
+    <blockquote>
+        <p><strong>{name_of_branch} - A descriptive message</strong></p>
+    </blockquote>
+
+    <h2>Branching</h2>
+    <ul>
+        <li><strong>main</strong> branch is protected to avoid pushing <strong>anything</strong> to the main branch directly.</li>
+        <li>Any trio of <strong>issue</strong>, <strong>branch</strong>, and <strong>merge request</strong> are interconnected, for example:</li>
+    </ul>
+    <p>
+        <a href="https://github.com/JoyDom-org/JoyDom/issues/1">Issue #1: `Implement initial`</a> is associated with a branch called <code>ImplementInitial</code> and merge request: <code>#1 - Implement initial</code>. 
+        The merge request <code>#1 - Implement initial</code> closes the issue <code>#1 - Implement initial</code> by requesting the resolving of the branch <code>ImplementInitial</code> to <code>main</code>.
+    </p>
+
+    <h1>Code</h1>
+
+    <h2>Checklist</h2>
+    <p>Before pushing your code, please make sure the code meets the following requirements:</p>
+    <ul class="checklist">
+        <li>
+            <input type="checkbox" id="google-style">
+            <label for="google-style">Follow the <a href="https://google.github.io/styleguide/pyguide.html" target="_blank">Google Style Guide</a> to make sure:</label>
+            <ul>
+                <li>
+                    <input type="checkbox" id="docstrings">
+                    <label for="docstrings">Every function has doc-strings</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="comments">
+                    <label for="comments">In-line comments are sufficient</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="type-hinting">
+                    <label for="type-hinting">Type hinting is sufficient</label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="try-except">
+            <label for="try-except">Potential exceptions are in a try-except block</label>
+        </li>
+        <li>
+            <input type="checkbox" id="pep8">
+            <label for="pep8">You skimmed through <a href="https://peps.python.org/pep-0008/" target="_blank">PEP8</a> at least once!</label>
+        </li>
+    </ul>
+
+    <h2>Write Functional Code</h2>
+    <p>Even though Python is not a functional programming language, I believe that following a functional paradigm works just fine for our repository. Besides, I don’t like classes!</p>
+    <p>Here are the things to keep in mind to follow the functional paradigm while writing Python code:</p>
+    <ul>
+        <li>Watch <a href="https://www.youtube.com/watch?v=Rp9Ha0rVM1w&t=929s&ab_channel=ArjanCodes" target="_blank">this tutorial</a> and <strong>try the examples on your own.</strong></li>
+    </ul>
+
+    <h3>Key Points:</h3>
+    <ul>
+        <li>Structural pattern matching</li>
+        <li>Immutability</li>
+        <li>Pure functions: The idea is to group side effects in a single place together. For example, logging can potentially cause a side effect.</li>
+        <li>Use higher-order functions:
+            <ul>
+                <li>Callable parameters</li>
+                <li>Map</li>
+                <li>Partial functions</li>
+            </ul>
+        </li>
+        <li>Function composition</li>
+        <li>Lazy evaluation</li>
+    </ul>
+  </div>
+  <div id="footer"> Mahdi's Y2K Tech Blog | <a href="mailto:em.habibi@hotmail.com">contact</a> </div>
+</div>
+</body>
+</html>
