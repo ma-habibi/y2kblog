@@ -138,7 +138,9 @@
               console.log(sins)
           
               setInterval(draw, 20);
-              window.addEventListener("resize", () => location.reload());
+
+              if (!window.matchMedia("(max-width: 768px)").matches)
+                  window.addEventListener("resize", () => location.reload());
           }
           
           main()
