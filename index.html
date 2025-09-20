@@ -1,28 +1,30 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahdi's Y2K Blog</title>
-    <!-- Add Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-dark">
-    <header class="bg-dark text-white text-center py-5">
-        <h1 class="display-4">Mahdi's Y2K Blog</h1>
+<body>
+    <header>
+        <h1>Mahdi's Y2K Blog</h1>
         <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="mailto:em.habibi@hotmail.com">Contact</a></li>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="mailto:em.habibi@hotmail.com">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="bg-dark p-4 rounded shadow-sm">
-            <p>Hi, my name is Mahdi. I'm a developer as well as a technical writer.</p>
-            <p>The second one concerns you since you are reading my blog.</p>
-            <p>So I'll try to do it OK. See you around.</p>
+        <div>
+          <figure>
+            <blockquote>
+              <p>To infinity and beyond</p>
+            </blockquote>
+            <figcaption>— Buzz Lightyear (not Mahdi Habibi(whom I am(nice to meet you!)))</figcaption>
+          </figure>
         </div>
-    
     </header>
 
     <canvas style="z-index=-1;"></canvas>
@@ -30,22 +32,35 @@
     <main class="container my-5 text-white">
         <h2>Blog Posts</h2>
         <!-- Blog posts section -->
-        <div class="row mb-4">
+        <div>
             <!-- Blog post 1 -->
-            <div class="col-12">
-                <div class="card border-secondary bg-dark">
-                    <div class="card-body">
-                        <h5 class="card-header">Write Functional Python</h5>
-                        <p class="card-text">
+            <div>
+                <div>
+                    <div>
+                        <h5>Write Functional Python</h5>
+                        <p>
                         Even though Python is not a functional programing language,
                         I think that following functional paradigm works just fine for some projects.
                         Besides I don’t like classes! Here are the things to keep in mind to
                         follow the functional paradigm while writing Python code
                         </p>
-                        <a href="./pythonWiki.html" class="btn btn-light">Read More</a>
+                        <a href="./pythonWiki.html">Read More</a>
                     </div>
                 </div>
             </div>
+            
+            <div>
+                <div>
+                    <div>
+                        <h5>Queuing the Processing of Incoming Requests to FastAPI Server Using Redis</h5>
+                        <p>
+                        ...
+                        </p>
+                        <a href="./pythonWiki.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -146,7 +161,7 @@
           main()
         </script>
 
-        <footer class="bg-black text-white text-center py-4 mt-5">
+        <footer>
         <p>Animations you see in this website are 2d visualizations of simple equations using JS canvas. 2025 Mahdi's Y2K Blog. </p>
 
 </body>
