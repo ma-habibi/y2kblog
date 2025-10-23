@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +6,13 @@
     <title>Mahdi's Y2K Blog</title>
 </head>
 <body>
-    <header>
+    <header style="padding: .75em;">
         <h1>Mahdi's Y2K Blog</h1>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="mailto:em.habibi@hotmail.com">Contact</a></li>
+                <li><a href="https://github.com/ma-habibi">Github</a></li>
             </ul>
         </nav>
 
@@ -22,7 +21,7 @@
             <blockquote>
               <p>To infinity and beyond</p>
             </blockquote>
-            <figcaption>— Buzz Lightyear (not Mahdi Habibi(whom I am(nice to meet you!)))</figcaption>
+            <figcaption>— Buzz Lightyear </figcaption>
           </figure>
         </div>
     </header>
@@ -30,37 +29,22 @@
     <canvas style="z-index=-1;"></canvas>
 
     <main class="container my-5 text-white">
-        <h2>Blog Posts</h2>
-        <!-- Blog posts section -->
-        <div>
-            <!-- Blog post 1 -->
+        <div style="display: grid; padding: .75em">
+            <h2>Blog Posts</h2>
             <div>
                 <div>
                     <div>
-                        <h5>Write Functional Python</h5>
+                        <h4>Write Functional Python</h4>
                         <p>
-                        Even though Python is not a functional programing language,
+                        Even though Python is not a functional programming language,
                         I think that following functional paradigm works just fine for some projects.
                         Besides I don’t like classes! Here are the things to keep in mind to
-                        follow the functional paradigm while writing Python code
+                        follow the functional paradigm while writing Python code...
+                        <a href="./pythonWiki.html">read full post</a>
                         </p>
-                        <a href="./pythonWiki.html">Read More</a>
                     </div>
                 </div>
             </div>
-            
-            <div>
-                <div>
-                    <div>
-                        <h5>Queuing the Processing of Incoming Requests to FastAPI Server Using Redis</h5>
-                        <p>
-                        ...
-                        </p>
-                        <a href="./pythonWiki.html">Read More</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
 
@@ -113,7 +97,7 @@
           
           /* change frequency while keep normilize */
           function updateFrequencies() {
-            //
+            
             // keep normalize
             for (let i = 0; i < sins.length; i++) {
               if (sins[i].f >= MAX_FREQ)
